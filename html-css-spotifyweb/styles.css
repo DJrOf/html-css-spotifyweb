@@ -1,0 +1,402 @@
+/*utilities*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(44, 49, 49);
+    height: 100vh - 100px;
+}
+
+/* 992px */
+
+@media screen and (min-width: 992px) {
+
+    .upper-content {
+        display: flex;
+    }
+
+    .sidebar {
+        background-color: rgb(0, 0, 0);
+        flex-basis: 180px;
+        flex-shrink: 0;
+        z-index: 1;  
+        height: auto;
+        position: fixed;
+        width: 200px;
+        height: auto;
+    }
+
+    .logo {
+        width: 70%;
+        padding-top: 5%;
+    }
+
+    .top-li, li, h2{
+        color: white;
+        padding-left: 5%;
+
+    }
+
+    li {
+        padding-left: 5%;
+        padding-top: 6%;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+        padding-top: 10%;
+    }
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+    button {
+        width: 18%;
+        height: 18%;
+        border: none;
+        background-color: #d1d1d1;
+        font-size: 32px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+.sidebar-icon {
+    height: 10%;
+    width: 10%;
+}
+
+    main {
+        flex-grow: 1;
+        overflow-y: auto;
+        
+    }
+
+    footer {
+        height: 100px;
+        background-color: rgb(59, 57, 53);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        color: white;
+        text-align: center;
+        z-index: 3;
+            }
+
+    main header {
+        height: 80px;
+        position: fixed;
+        background-color: rgb(24, 24, 29);
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    .bot {
+        left: 0%;
+        bottom: 0; 
+        color: white;
+        position: relative; 
+        margin-top: 66%;
+        }
+
+        .upgrade {
+            border-radius: 18px;
+            bottom: 0;
+            float: right;
+            background-color: rgb(24, 24, 29);
+            border: 1px white solid;
+            color: white;
+            font-size: 20px;
+        }
+
+       .container {
+           padding-top: 10px;
+           padding-bottom: 200px;
+       }
+
+        .row {
+           
+            margin-left: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+            min-width: 992px;
+            
+        }
+        
+        .col {
+            margin-top: 90px;
+            padding: 3%;
+        }
+        
+        #imgcard {
+            width: 100%;   
+            
+        }
+
+        
+/* 768px */
+        
+@media screen and (min-width: 768px) {
+
+    .upper-content {
+        
+        display: flex;
+    }
+
+    .logo {
+        width: 70%;
+        padding-top: 5%;
+    }
+
+    .top-li, li, h2{
+        color: white;
+        padding-left: 5%;
+
+    }
+
+    li {
+        padding-left: 5%;
+        padding-top: 6%;
+    }
+
+    h2 {
+        padding-top: 10%;
+    }
+
+    button {
+        width: 18%;
+        height: 18%;
+        border: none;
+        background-color: #d1d1d1;
+        font-size: 32px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+
+    .sidebar-icon {
+        height: 10%;
+        width: 10%;
+    }
+
+    .sidebar {
+        background-color: rgb(0, 0, 0);
+        flex-basis: 180px;
+        flex-shrink: 0;
+        z-index: 1;  
+        height: auto;
+        position: fixed;
+        width: 200px;
+        height: auto;
+    }
+
+    #titoli {
+        margin: 0;
+        padding: 0;
+    }
+
+    .row {
+        margin-top: 0px;
+        margin-left: 200px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .col {
+        padding: 3%;
+    }
+    
+    #imgcard {
+        width: 130px;   
+    }
+
+    main {
+        flex-grow: 1;
+        overflow-y: auto;
+        
+    }
+
+    footer {
+        height: 100px;
+        background-color: rgb(59, 57, 53);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        color: white;
+        text-align: center;
+        z-index: 3;
+            }
+
+    main header {
+        height: 80px;
+        position: fixed;
+        background-color: rgb(24, 24, 29);
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    .bot {
+        left: 0%;
+        bottom: 0; 
+        color: white;
+        position: relative; 
+        margin-top: 66%;
+        }
+
+        .upgrade {
+            border-radius: 18px;
+            bottom: 0;
+            float: right;
+            background-color: rgb(24, 24, 29);
+            border: 1px white solid;
+            color: white;
+            font-size: 20px;
+        }
+
+}
+   
+/* 576px */
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    .upper-content {
+        
+        display: flex;
+    }
+
+    .top-li, li, h2{
+        color: white;
+        padding-left: 5%;
+
+    }
+
+    li {
+        padding-left: 5%;
+        padding-top: 6%;
+    }
+
+    h2 {
+        padding-top: 10%;
+    }
+
+    button {
+        width: 18%;
+        height: 18%;
+        border: none;
+        background-color: #d1d1d1;
+        font-size: 32px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .logo {
+        width: 70%;
+        padding-top: 5%;
+    }
+
+    .sidebar-icon {
+        height: 10%;
+        width: 10%;
+    }
+
+    .sidebar {
+        background-color: rgb(0, 0, 0);
+        flex-basis: 180px;
+        flex-shrink: 0;
+        z-index: 1;  
+        height: auto;
+        position: fixed;
+        width: 200px;
+        height: auto;
+    }
+
+    .row {
+        margin-top: 0px;
+        margin-left: 200px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .col {
+        padding: 3%;
+    }
+    
+    #imgcard {
+        width: 130px;   
+    }
+
+    main {
+        flex-grow: 1;
+        overflow-y: auto;
+        
+    }
+
+    footer {
+        height: 100px;
+        background-color: rgb(59, 57, 53);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        color: white;
+        text-align: center;
+        z-index: 3;
+            }
+
+    main header {
+        height: 80px;
+        position: fixed;
+        background-color: rgb(24, 24, 29);
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    .bot {
+        left: 0%;
+        bottom: 0; 
+        color: white;
+        position: relative; 
+        margin-top: 66%;
+        }
+
+        .upgrade {
+            border-radius: 18px;
+            bottom: 0;
+            float: right;
+            background-color: rgb(24, 24, 29);
+            border: 1px white solid;
+            color: white;
+            font-size: 20px;
+        }
+
+}
+
+
+    
+}
